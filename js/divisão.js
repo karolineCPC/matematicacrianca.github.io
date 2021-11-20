@@ -11,7 +11,10 @@ function gerar_equação(){
         dummyResposta2 = Math.floor(Math.random() * 10),
         allRespostas = [],
         switchRespostas = [];
-    resposta = eval (num1  / num2);
+    var resultado = num1*num2;
+    resposta = num1;
+    num1 = resultado;
+    //resposta = (num1  / num2).toFixed(2);
 
     document.getElementById("num1").innerHTML = num1;
     document.getElementById("num2").innerHTML = num2;
